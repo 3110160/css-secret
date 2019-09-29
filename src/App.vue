@@ -4,7 +4,7 @@
   </div>
 </template>
 <style>
-html{
+html {
   background-color: antiquewhite;
 }
 </style>

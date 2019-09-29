@@ -10,6 +10,7 @@ const router = new VueRouter({
   mode: 'history',
   routes: [
     { path: '/index', component: Home },
+    {path: '/', redirect: '/index'},
     { 
       path: '/css/demo1/background-clip', 
       component: DEMO1 ,

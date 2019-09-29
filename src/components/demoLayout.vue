@@ -1,6 +1,6 @@
 <template>
   <div class="demo" v-highlight>
-    <div class="demo-title">{{title || _title}}</div>
+    <div class="demo-title">{{title || tit}}</div>
     <div class="demo-content">
       <slot/>
     </div>
@@ -12,7 +12,7 @@ export default {
   name: "demoLayout",
   data() {
     return {
-      _title: ""
+      tit: ""
     };
   },
   props: {
@@ -20,7 +20,7 @@ export default {
   },
   created() {
     if (!this.title) {
-      this._title = this.$route.name;
+      this.tit = this.$route.name;
     }
   }
 };

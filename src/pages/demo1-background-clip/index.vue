@@ -1,13 +1,17 @@
 <template>
   <demoLayout>
     <div class="box"></div>
-    <code slot="code">
-      background-clip: border-box;
-      border: 20px dashed #58a;
-      background: #fff;
-    </code>
+    <codetemplate/>
   </demoLayout>
 </template>
+<script>
+import codetemplate from './demo1.md'
+export default {
+  components:{
+    codetemplate,
+  }
+}
+</script>
 
 <style lang="less" scoped>
 .box {
