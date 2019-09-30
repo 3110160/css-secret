@@ -25,6 +25,5 @@ module.exports = function(source) {
   };
   const content = parser.render(source);
   source = options.wrapper(content);
-  console.log(source)
   return source;
 };
