@@ -6,8 +6,10 @@
 
 ## css代码演示
 ```css
-background: url(code-pirate.svg) no-repeat #58a; 
-background-position: right 20px bottom 10px;
+{
+  background: url(code-pirate.svg) no-repeat #58a;
+  background-position: right 20px bottom 10px;
+}
 ```
 [在线demo](play.csssecrets.io/extended-bg-position)
 
@@ -19,11 +21,13 @@ background-position: right 20px bottom 10px;
 
 ## css代码演示
 ```css
-padding: 10px;
-background: url("code-pirate.svg") no-repeat #58a bottom right; /* 或 100% 100% */ background-origin: content-box;
+{
+  padding: 10px;
+  background: url("code-pirate.svg") no-repeat #58a bottom right;
+  background-origin: content-box;
+}
 ```
-[在线demo]
-(play.csssecrets.io/background-origin)
+[在线demo](play.csssecrets.io/background-origin)
 
 ## calc() 方案
 
@@ -32,7 +36,10 @@ background: url("code-pirate.svg") no-repeat #58a bottom right; /* 或 100% 100%
 
 ## css代码演示
 ```css
-background: url("code-pirate.svg") no-repeat;background-position: calc(100% - 20px) calc(100% - 10px);
+{
+  background: url("code-pirate.svg") no-repeat;
+  background-position: calc(100% - 20px) calc(100% - 10px);
+}
 ```
 
 [在线demo](play.csssecrets.io/background-position-calc)

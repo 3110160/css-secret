@@ -8,9 +8,11 @@
 
 ## css代码演示
 ```css
-border: 10px solid hsla(0,0%,100%,.5);
-background: white;
-background-clip: padding-box;
+{
+  border: 10px solid hsla(0,0%,100%,.5);
+  background: white;
+  background-clip: padding-box;
+}
 ```
 [在线demo](play.csssecrets.io/translucent-borders)
 

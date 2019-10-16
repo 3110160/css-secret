@@ -7,10 +7,12 @@
 
 ## css代码演示
 ```css
-background: yellowgreen;
-box-shadow: 0 0 0 10px #655,
+{
+  background: yellowgreen;
+  box-shadow: 0 0 0 10px #655,
             0 0 0 15px deeppink,
             0 2px 5px 15px rgba(0,0,0,.6);
+}
 ```
 [在线demo](play.csssecrets.io/multiple-borders)
 
@@ -21,9 +23,11 @@ box-shadow: 0 0 0 10px #655,
 
 ## css代码演示
 ```css
-background: yellowgreen;
-border: 10px solid #655;
-outline: 5px solid deeppink;
+{
+  background: yellowgreen;
+  border: 10px solid #655;
+  outline: 5px solid deeppink;
+}
 ```
 
 
