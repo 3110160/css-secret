@@ -5,9 +5,9 @@
   </demoLayout>
 </template>
 <script>
-import codetemplate from './demo.md'
+import codetemplate from './doc.md'
 export default {
-  name:'demo1-background-clip',
+  name:'multiple-borders',
   components:{
     codetemplate,
   }

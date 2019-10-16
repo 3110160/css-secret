@@ -3,9 +3,6 @@ import Vue from 'vue'
 
 Vue.use(VueRouter);
 
-import Home from './pages/index'
-console.log(Home)
-
 const arr = [];
 const cache = {};
 
@@ -16,19 +13,20 @@ function importAll(r) {
 importAll(require.context('./pages/demos', true, /index\.vue$/));
 // {./demo1/index.v:'context'}
 Object.keys(cache).forEach(path => {
-  console.log(`/css/${path.match(/^\/.*/)}`)
   arr.push({
     path: `/css/${cache[path].default.name}`,
     component: cache[path].default,
-    name: cache[path].default.name || '请在组件内设置'
+    name: cache[path].default.name
   })
 })
+
+import Home from './pages/index'
 
 const router = new VueRouter({
   mode: 'history',
   routes: [{
       path: '/index',
-      component: h=>h(< Home list='2312' />)
+      component: Home
     },
     {
       path: '/',

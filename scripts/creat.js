@@ -16,5 +16,6 @@ inquirer
     shell.mkdir('-p',dirname);
     shell.cp('-R', path.resolve(__dirname,'pageTemplate/*'), `${dirpath}/${dirname}`);//复制
     shell.sed('-i', 'demoname', dirname, `${dirpath}/${dirname}/index.vue`);
-    console.log(`\n see the new page: http://localhost:8080/css/${dirname} \n`)
+    console.log(`\n see the new page: http://localhost:8080/css/${dirname} \n`);
+    process.exit();
   });

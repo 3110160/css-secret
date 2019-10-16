@@ -7,7 +7,7 @@
 <script>
 import codetemplate from './doc.md'
 export default {
-  name:'demoname',
+  name:'background-clip',
   components:{
     codetemplate,
   }

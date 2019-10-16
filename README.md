@@ -1,12 +1,6 @@
 ## css 揭秘
->vue + md文档，游览文档
-
->npm i
-
->mkdowm-loader 文件使用本地 npm link 后再安装
-
->npm run serve
-
->npm run creat:page 新建文档模板
+1. [透明边框]('./src/pages/demos/background-clip/doc.md')
+1. [多重边框]('./src/pages/demos/multiple-borders/doc.md')
+1. [背景图定位]('./src/pages/demos/extended-bg-position/doc.md')
 
 

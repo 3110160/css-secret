@@ -1,14 +1,10 @@
 <template>
   <div class="home">
     <h1 class="title">CSS SECRET</h1>
-    <div>{{list}}</div>
     <ul class="box">
-      <li v-for="i of listConfig" :key="i">
+      <li v-for="i of listConfig" :key="i.path">
         <router-link :to="i.path">{{i.title}}</router-link>
       </li>
-      <!-- <li v-for="i of (49-listConfig.length)" :key="i">
-        <a>半透明边框</a>
-      </li> -->
     </ul>
   </div>
 </template>
@@ -18,11 +14,8 @@ import listConfig from "./list.config.js";
 export default {
   data() {
     return {
-      listConfig: [],
+      listConfig,
     };
-  },
-  props:{
-    list:''
   }
 };
 </script>
